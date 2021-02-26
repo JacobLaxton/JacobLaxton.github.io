@@ -18,7 +18,7 @@
             <br/>
             <br/>
             
-            <p3> This is the schematic for my circuit. I connected the provided joystick to the Analog In pins on the Arduino, and connected an LED to pin 5. </p3>
+            <p3>This is the schematic for my circuit. I connected the provided joystick to the 'Analog In' pins on the Arduino, and connected an LED to pin 5.</p3>
             <br/>
             <br/>
             <img src="schematic6.png" width=1200></a>
@@ -26,8 +26,8 @@
             <br/>
             <br/>
                     
-            <p3>Here is a picture of my implemented circuit. It is pretty simple since the only things connected are the joystick and the green led. The blue lead coming off
-            the joystick is not connected to anything, but could allow the button on the joystick to be programmed</p3>
+            <p3>Here is my implemented circuit. It is pretty simple since the only things connected are the joystick and the green LED. The blue lead coming off
+            the joystick is not connected to anything, but could allow the button on the joystick to be programmed.</p3>
             <br/>
             <br/>
             <img src="circuit6.jpg" width=900></a>
@@ -35,9 +35,9 @@
             <br/>
             <br/>
                 
-            <p3> This is the code for the circuit, which has two parts. The first part sends the data from the Analog In pins (which are connected to the Joystick) over the
-             serial port to be interpreted by the P5 javascript code below. The second part recieves the data from the P5 javascript, which is sending the keypresses from the 
-            keyboard. Depending on if a keypress is w or s, the voltage to the LED will increase or decrease. </p3>         
+            <p3>This is the code for the circuit, which has two parts. The first part sends the data from the 'Analog In' pins (which are connected to the Joystick) over the
+            serial port to be interpreted by the P5 javascript code. The second part recieves the data from the P5 javascript code, which is sending keypresses from my 
+            keyboard. Depending on if a keypress is 'w' or 's', the voltage to the LED will increase or decrease.</p3>         
             <br/>
             <br/>
             <img src="code6.PNG" width=900></a>
@@ -45,9 +45,9 @@
             <br/>
             <br/>
 
-            <p3> This is the P5 javascript code that is run on the 'Web Server for Chrome' program. This code sets up the conenction to the serial port and creates a canvas
-            for the program to draw on. The SerialEvent function reads the joystick data over the serial port, and the keyPressed fucntion reads the input form my keyboard.
-            In the draw function, the characters and brightnes are being updated over every loop.</p3>         
+            <p3> This is the P5 javascript code that is run on the 'Web Server for Chrome' program. This code first sets up the conenction to the serial port and creates a canvas
+            for the program to draw on. The serialEvent function reads the joystick data over the serial port, and the keyPressed fucntion reads the input from my keyboard.
+            In the draw function, the character and brightness are being updated every time the function is called.</p3>         
             <br/>
             <br/>
             <img src="newcode6.PNG" width=600></a>
@@ -55,13 +55,14 @@
             <br/>
             <br/>
     
-            <p3>Here's the circuit in action! The video is attempting to show a lot of things so it's a bit long, but what's important is that:</p3>
+            <p3>Here's the circuit in action! The video is attempting to show a lot of things so it's a bit long, but what's important is:</p3>
             <br/>
             <p3>Whichver key is pressed on the keyboard updates the character on the screen</p3>
             <br/>
             <p3>The joystick input will move the character around on the screen</p3>
             <br/>
-            <p3>If W or S is pressed, it will either increase or decrease the brightness number in the bottom right corner and increase or decrease the LED brightness.</p3>
+            <p3>If 'w' or 's' is pressed, it will either increase or decrease the brightness number in the bottom right corner of the screen and increase
+             or decrease the LED brightness on the arduino.</p3>
             <br/>
             <br/>
             <img src="video6.gif" width=600></a>
