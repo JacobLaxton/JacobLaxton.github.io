@@ -40,16 +40,20 @@ is good at explaining both your concept and your implementation.
                 the appropriate code onto the arduino, my project was done. Below are the steps I took to create this device.
             </p3>
             
-            <p3>This is the schematic for my circuit. Luckily, all I had to do was plug my IR sensor and stepper motor controller into the PWM ports on the arduino - no breadboard or resistors necessary.</p3>
+            <p3>
+                This is the schematic for my circuit. Luckily, all I had to do was plug my IR sensor and stepper motor controller into the PWM ports on the arduino - no breadboard or resistors necessary.
+            </p3>
+            
             <br/>
             <br/>
-            <img src="schematic6.png" width=1200></a>
+            <img src="schematic6.png" width=1200>
             <br/>
             <br/>
             <br/>
                     
-            <p3>Here is my implemented circuit. It is pretty simple since the only things connected are the joystick and the green LED. The blue lead coming off
-            the joystick is not connected to anything, but could allow the button on the joystick to be programmed.</p3>
+            <p3>
+                Here is my implemented circuit
+            </p3>
             <br/>
             <br/>
             <img src="circuit6.jpg" width=900></a>
@@ -67,12 +71,9 @@ is good at explaining both your concept and your implementation.
             <br/>
             <br/>
 
-            <p3> This is the P5 javascript code that is run on the 'Web Server for Chrome' program. This code first sets up the conenction to the serial port and creates a canvas
-            for the program to draw on. The serialEvent function reads the joystick data over the serial port, and the keyPressed fucntion reads the input from my keyboard. 
-            The brightness value can be set between 0 and 9, which corresponds to the increments in the arduino firmware that increment or decrement the LED brightness.
-            In the draw function, the character and brightness are being updated every time the function is called. The x and y variables are for the x and y location of the character.
-            They are being mapped from 0-1000 (roughly the range of the joystick output) to 30-1000 for the y direction and 30-2000 for the x direction
-            (the pixel ranges where the character can be seen on the drawing canvas)</p3>         
+            <p3> 
+                This is the code
+            </p3>         
             <br/>
             <br/>
             <img src="newcode6.PNG" width=600></a>
@@ -80,14 +81,8 @@ is good at explaining both your concept and your implementation.
             <br/>
             <br/>
     
-            <p3>Here's the circuit in action! The video is attempting to show a lot of things so it's a bit long, but what's important is:</p3>
-            <br/>
-            <p3>Whichver key is pressed on the keyboard updates the character on the screen</p3>
-            <br/>
-            <p3>The joystick input will move the character around on the screen</p3>
-            <br/>
-            <p3>If 'w' or 's' is pressed, it will either increase or decrease the brightness number in the bottom right corner of the screen and increase
-             or decrease the LED brightness on the arduino.</p3>
+            <p3>
+                Here's the project in action!
             <br/>
             <br/>
             <img src="video6.gif" width=600></a>
