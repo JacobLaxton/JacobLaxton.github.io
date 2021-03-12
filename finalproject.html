@@ -20,21 +20,23 @@
             
             <p3>
                 For my final project I decided to make a device that would automatically open or close the blinds in my room. While I was initally <br/>
-                considering pulling up the blinds by the string, I decided this would lead to lot of stress on the components in our toolkits, if they could handle the loads at all. <br/>
-                So, I instead developed a device that would rotate the rod on my blinds that tilts the shades, allowing more or less light into the room. <br/>
-                I wanted this device to be controlled by a remote control as well as be able to function autonomously each morning.
+                considering pulling up the blinds by the string, I decided this would lead to lot of stress on the components in our toolkits, if <br/>
+                they could handle the loads at all. So, I instead developed a device that would rotate the rod on my blinds that tilts the shades, allowing<br/>
+                more or less light into the room. I wanted this device to be controlled by a remote control as well as be able to function autonomously each morning.
                 <br/>
                 <br/>
-                To create this device, I utilized the stepper motor to rotate the blinds. Once I modeled and 3D printed a coupler that would connect the stepper motor shaft to the blind opening rod,<br/>
-                all I had to do was create a housing for the motor, arduino, IR sensor, and stepper controller. Once I modeled and 3D printed the chasis, the hardware component of the project was done. Lastly, I had to write <br/>
-                and flash the appropriate code onto the arduino. Below are the steps I took to create this device.
+                To create this device, I utilized the stepper motor to rotate the blinds. Once I modeled and 3D printed a coupler that would connect the stepper<br/>
+                motor shaft to the blind opening rod, all I had to do was create a housing for the motor, arduino, IR sensor, and stepper controller. Once I <br/>
+                modeled and 3D printed the chasis, the hardware component of the project was done. Lastly, I had to write and flash the appropriate code <br/>
+                onto the arduino. Below are the steps I took to create this device.
             </p3>
             <br/>
             <br/>
             <br/>
            
             <p3>
-                This is the schematic for my circuit. Luckily, all I had to do was plug my IR sensor and stepper motor controller into the PWM ports on the arduino - no breadboard or resistors necessary.
+                This is the schematic for my circuit. Luckily, all I had to do was plug my IR sensor and stepper motor controller into the PWM ports <br/>
+                on the arduino - no breadboard or resistors necessary.
             </p3>
             <br/>
             <br/>
@@ -44,19 +46,19 @@
             <br/>
                     
             <p3>
-                Here is the 3D model of the stepper coupler and the device chasis. The chasis conceals all parts of the device, except for the motor, which is exposed to<br/>
+                Here is the 3D model of the stepper coupler and the device chasis. The chasis conceals all parts of the device, except for the motor, which is exposed in order to<br/>
                 connect to the blind opening rod. The Chasis also has a hole for the IR sensor to recieve its signal.
             </p3>
             <br/>
             <br/>
-            <img src="3d.jpg" width=600></a>
+            <img src="3d.PNG" width=600></a>
             <br/>
             <br/>
             <br/>
                 
             <p3>
                 This is the completed hardware of the device. I mounted the printed components on the wall, then inserted the Arduino, Stepper Controller, Stepper Motor, and IR
-                Sensor into their respective locations. I can remove the motor by sliding it out of the top portion of the chasis perpendicular to the 
+                Sensor into their respective locations on the chasis. I can remove the motor by sliding it out of the top portion of the chasis perpendicular to the 
                 blind rod, allowing the motor to back off from the rod without needing to remove the device from the wall.
             </p3>   
             <br/>
@@ -68,22 +70,24 @@
             <br/>
             <br/>
         
-            <p3>
-                This is the code for the project. This first image shows the setup and loop for the code, which use a switch to execute different commands based on the IR code.
-                At the end of the loop you can see where the code will automaticaly execute the 'automatic' fucntion after 2 seconds', which enables the autonomy
+            <p3>e
+                This is the code for the project. This first image shows the setup and loop for the code, which uses a switch to execute different commands based on what the IR sensor recieves.
+                By plugging this device into a smart plug, and setting a routine to turn on the smart plug in the morning, the blinds will open autonomously. This is done using the code at the bottom <br/>
+                of the section below, where the code will automaticaly execute the 'automatic' fucntion after 2 seconds of being turned on
                 <br/>
                 <img src="finalcode1.PNG" width=900></a>
                 <br/>
-                This second image shows the stepper off function, which cuts all power to the stepper motor, and also shows the different functiions that determine how long
-                to turn each motor depending on which command is received from the IR sensor
+                This second image shows the stepperOff() function, which cuts all power to the stepper motor, and also shows the different functions that determine how long and in which direction
+                to turn the motor depending on which command is received from the IR sensor.
                 <br/>
                 <img src="finalcode2.PNG" width=900></a>
                 <br/>
-                This third images shows how the program reads the IR sensor data and saves that data into a command variable, which is later used to determine which funciton to run
+                This third images shows how the program reads the IR sensor data and saves that data into a command variable, which is later used to determine which motor funciton to run.
                 <br/>
                 <img src="finalcode3.PNG" width=900></a>
                 <br/>
-                This last image shows the different stepper functions, where each pin is turned on and off in a sequence to move the motor one step. One order moves the motor clockwize, and the other order moves the motor counterclockwise
+                This last image shows the different stepper functions, where each pin is turned on and off in a sequence to move the motor one step. The first section of code moves the motor clockwize, <br/>
+                and the other section moves the motor counterclockwise.
                 <br/>
                 <img src="finalcode4.PNG" width=900></a>
                 <br/>
@@ -92,7 +96,7 @@
             <br/>
  
             <p3>
-                Here's the project in action! The first video shows me using the remote control to turn the blind rod from closed, to open, and then to closed in the other direction
+                Here's the project in action! The first video shows me using the remote control to turn the blinds from closed, to open, and then to closed in the other direction.
             </p3>
             <br/>
             <br/>
