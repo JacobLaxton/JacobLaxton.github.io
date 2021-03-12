@@ -1,3 +1,14 @@
+You must include a description of your concept, a technical
+implementation section that includes a schematic, circuit,
+code, and a writeup of how everything works, and include your demo video.
+These are due by URL submission on Sunday March 14th.
+
+For your technical documentation you need to include schematics, circuit,
+code, and technical write up. You will receive full marks if your schematic,
+circuit, and code are correct and well done, and if your technical write up
+is good at explaining both your concept and your implementation.
+
+
 <!DOCTYPE html> 
 <html> 
     <head> 
@@ -18,7 +29,18 @@
             <br/>
             <br/>
             
-            <p3>This is the schematic for my circuit. I connected the provided joystick to the 'Analog In' pins on the Arduino, and connected an LED to pin 5.</p3>
+            <p3>
+                For my final project I decided to make a device that would automatically open or close the blinds in my room. While I was initally <br/>
+                considering pulling up my blinds by the string, I decided that would be a lot of weight for any of the components in our toolkits to handle without a strong <br/>
+                set of gears, and therefore a big hassle. So, I instead developed a device that would rotate the rod on my blinds that tilts the shades, allowing more or less light into the room. <br/>
+                I wanted this device to be controlled by a remote contorl as well as function autonomously each morning.
+                <br>
+                To create this device, I utilized the stepper motor to rotate the blinds. Once I modeled and 3D printed a coupler that would connect the stepper motor shaft to the blind opening rod,<br/>
+                all I had to do was create a housing for the motor, arduino, IR sensor, and stepper controller. Once I modeled 3D printed the chasis, the physical side of the project was done. After I flashed <br/>
+                the appropriate code onto the arduino, my project was done. Below are the steps I took to create this device.
+            </p3>
+            
+            <p3>This is the schematic for my circuit. Luckily, all I had to do was plug my IR sensor and stepper motor controller into the PWM ports on the arduino - no breadboard or resistors necessary.</p3>
             <br/>
             <br/>
             <img src="schematic6.png" width=1200></a>
